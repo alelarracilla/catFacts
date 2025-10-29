@@ -5,9 +5,9 @@ interface AvatarPropTypes {
 
 const Avatar: React.FC<AvatarPropTypes> = ({ imageURL, name }) => {
   return (
-    <div>
+    <div className="flex flex-row items">
       <img src={imageURL} alt={name} />
-      <p>{name}</p>
+      <p className="ml-2">{name}</p>
     </div>
   );
 };
